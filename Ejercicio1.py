@@ -49,6 +49,10 @@ class Mostrar:
     def __init__(self, mensaje): 
         self.mensaje = mensaje 
 
+    def __str__(self):
+        str = self.mensaje
+        return f'{str}'
+
 
 
 mostrar_ok = Mostrar('"OK"') 
