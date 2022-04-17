@@ -4,6 +4,8 @@ class Vista():
 
         self.entrada=str(input('Primera entrada:'))
         self.entrada2=str(input('Segunda entrada:'))
+        controlador = Controlador(self.entrada, self.entrada2)
+        Modelo(controlador.primera, controlador.segunda)
 
 
 class Controlador():
