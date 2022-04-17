@@ -19,6 +19,12 @@ class Si:
         self.condicion = condicion 
         self.entonces = entonces 
         self.si_no = si_no 
+    
+    def si(self, evaluacion):
+        if evaluacion == self.condicion:
+            self.entonces.si(evaluacion)
+        else:
+            self.si_no.si(evaluacion)
  
 class MientrasQue: 
     # Representa una instrucción 'while'. 
