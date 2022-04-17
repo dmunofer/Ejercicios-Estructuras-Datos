@@ -50,8 +50,8 @@ class Mostrar:
         self.mensaje = mensaje 
 
     def __str__(self):
-        str = self.mensaje
-        return f'{str}'
+        cadena = self.mensaje
+        return str(cadena)
 
 
 
