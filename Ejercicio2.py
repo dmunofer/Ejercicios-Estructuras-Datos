@@ -12,3 +12,14 @@ class Controlador():
 
         self.primera=str(entrada).upper()
         self.segunda=str(entrada2).upper()
+
+
+class Modelo():
+
+    def __init__(self, primera, segunda):
+        self.escribe(primera,segunda)
+
+    def escribe(self, filename, primera, segunda):
+        file= open(filename, 'w')
+        file.write(primera+'\n'+ segunda)
+        file.close()
