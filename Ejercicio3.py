@@ -6,8 +6,15 @@ class Naturaleza():
 
 class Producto(Naturaleza):
 
-    def __init__(self,):
+    def __init__(self,naturaleza):
+        self.naturaleza=naturaleza
+        self.precio =100
+    
+    def facturar(self):
+        return (100*self.naturaleza)+self.precio
 
+
+        
 
 
 
