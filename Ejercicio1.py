@@ -34,6 +34,14 @@ class MientrasQue:
     def __init__(self, condicion, bloque): 
         self.condicion = condicion 
         self.bloque = bloque 
+
+    def mientras_que(self):
+        i=0
+        while i<= len(self.bloque.instrucciones):
+            i+=1
+            pass
+        
+
  
 class Mostrar: 
     # Una instrucción para mostrar un mensaje 
